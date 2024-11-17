@@ -7,8 +7,3 @@ pool:
 steps:
 - script: echo "Pipeline run complete 2"
   displayName: 'Echo Complete Message'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
